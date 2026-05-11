@@ -1,0 +1,160 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "project_name",
+    "power_plant",
+    "project_type",
+    "cea_approval_ref",
+    "column_break_1",
+    "start_date",
+    "expected_completion_date",
+    "actual_completion_date",
+    "section_break_financials",
+    "sanctioned_cost",
+    "cwip_amount",
+    "expenditure_to_date",
+    "column_break_2",
+    "capacity_addition_mw",
+    "project_description",
+    "section_break_milestones",
+    "milestones",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "ECP-.YYYY.-.#####",
+      "default": "ECP-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "project_name",
+      "fieldtype": "Data",
+      "label": "Project Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "power_plant",
+      "fieldtype": "Link",
+      "label": "Power Plant",
+      "options": "Power Plant",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "project_type",
+      "fieldtype": "Select",
+      "label": "Project Type",
+      "options": "\nGreenfield\nCapacity Addition\nR and M\nEnvironmental Compliance\nGrid Upgrade\nOther",
+      "reqd": 1
+    },
+    {
+      "fieldname": "cea_approval_ref",
+      "fieldtype": "Data",
+      "label": "CEA Approval Ref"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Start Date"
+    },
+    {
+      "fieldname": "expected_completion_date",
+      "fieldtype": "Date",
+      "label": "Expected Completion Date"
+    },
+    {
+      "fieldname": "actual_completion_date",
+      "fieldtype": "Date",
+      "label": "Actual Completion Date"
+    },
+    {
+      "fieldname": "section_break_financials",
+      "fieldtype": "Section Break",
+      "label": "Financials"
+    },
+    {
+      "fieldname": "sanctioned_cost",
+      "fieldtype": "Currency",
+      "label": "Sanctioned Cost"
+    },
+    {
+      "fieldname": "cwip_amount",
+      "fieldtype": "Currency",
+      "label": "CWIP Amount"
+    },
+    {
+      "fieldname": "expenditure_to_date",
+      "fieldtype": "Currency",
+      "label": "Expenditure to Date"
+    },
+    {
+      "fieldname": "column_break_2",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "capacity_addition_mw",
+      "fieldtype": "Float",
+      "label": "Capacity Addition (MW)"
+    },
+    {
+      "fieldname": "project_description",
+      "fieldtype": "Small Text",
+      "label": "Project Description"
+    },
+    {
+      "fieldname": "section_break_milestones",
+      "fieldtype": "Section Break",
+      "label": "Milestones"
+    },
+    {
+      "fieldname": "milestones",
+      "fieldtype": "Table",
+      "label": "Milestones",
+      "options": "Milestone Row"
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nPlanning\nApproved\nIn Progress\nCompleted\nOn Hold\nCancelled",
+      "default": "Planning",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Capital Project",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1, "delete": 1, "email": 1, "export": 1, "print": 1,
+      "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1
+    },
+    {
+      "create": 1, "email": 1, "export": 1, "print": 1,
+      "read": 1, "report": 1, "role": "All", "share": 1, "write": 1
+    }
+  ],
+  "title_field": "project_name",
+  "track_changes": 1
+}

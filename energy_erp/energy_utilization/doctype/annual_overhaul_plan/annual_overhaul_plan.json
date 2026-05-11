@@ -1,0 +1,168 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "plan_title",
+    "generating_unit",
+    "power_plant",
+    "overhaul_year",
+    "column_break_1",
+    "planned_start_date",
+    "planned_end_date",
+    "actual_start_date",
+    "actual_end_date",
+    "section_break_scope",
+    "scope_of_work",
+    "contractor",
+    "column_break_2",
+    "estimated_cost",
+    "actual_cost",
+    "sldc_intimation_date",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EAOP-.YYYY.-.#####",
+      "default": "EAOP-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "plan_title",
+      "fieldtype": "Data",
+      "label": "Plan Title",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "generating_unit",
+      "fieldtype": "Data",
+      "label": "Generating Unit Reference",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "power_plant",
+      "fieldtype": "Link",
+      "label": "Power Plant",
+      "options": "Power Plant",
+      "reqd": 1
+    },
+    {
+      "fieldname": "overhaul_year",
+      "fieldtype": "Data",
+      "label": "Overhaul Year"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "planned_start_date",
+      "fieldtype": "Date",
+      "label": "Planned Start Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "planned_end_date",
+      "fieldtype": "Date",
+      "label": "Planned End Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "actual_start_date",
+      "fieldtype": "Date",
+      "label": "Actual Start Date"
+    },
+    {
+      "fieldname": "actual_end_date",
+      "fieldtype": "Date",
+      "label": "Actual End Date"
+    },
+    {
+      "fieldname": "section_break_scope",
+      "fieldtype": "Section Break",
+      "label": "Scope and Contractor"
+    },
+    {
+      "fieldname": "scope_of_work",
+      "fieldtype": "Small Text",
+      "label": "Scope of Work"
+    },
+    {
+      "fieldname": "contractor",
+      "fieldtype": "Data",
+      "label": "Contractor"
+    },
+    {
+      "fieldname": "column_break_2",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "estimated_cost",
+      "fieldtype": "Currency",
+      "label": "Estimated Cost"
+    },
+    {
+      "fieldname": "actual_cost",
+      "fieldtype": "Currency",
+      "label": "Actual Cost"
+    },
+    {
+      "fieldname": "sldc_intimation_date",
+      "fieldtype": "Date",
+      "label": "SLDC Intimation Date"
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nPlanned\nIn Progress\nCompleted\nDeferred\nCancelled",
+      "default": "Planned",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Annual Overhaul Plan",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "title_field": "plan_title",
+  "track_changes": 1
+}

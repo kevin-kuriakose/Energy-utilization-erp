@@ -1,0 +1,112 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "compliance_year",
+    "rpo_category",
+    "serc_notification_ref",
+    "column_break_1",
+    "obligation_mu",
+    "procured_mu",
+    "rec_used_mu",
+    "deficit_mu",
+    "section_break_status",
+    "compliance_status",
+    "remarks"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "ERPO-.YYYY.-.#####",
+      "default": "ERPO-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "compliance_year",
+      "fieldtype": "Data",
+      "label": "Compliance Year",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "rpo_category",
+      "fieldtype": "Link",
+      "label": "RPO Category",
+      "options": "RPO Category",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "serc_notification_ref",
+      "fieldtype": "Data",
+      "label": "SERC Notification Ref"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "obligation_mu",
+      "fieldtype": "Float",
+      "label": "Obligation (MU)",
+      "reqd": 1
+    },
+    {
+      "fieldname": "procured_mu",
+      "fieldtype": "Float",
+      "label": "Procured (MU)"
+    },
+    {
+      "fieldname": "rec_used_mu",
+      "fieldtype": "Float",
+      "label": "REC Used (MU)"
+    },
+    {
+      "fieldname": "deficit_mu",
+      "fieldtype": "Float",
+      "label": "Deficit (MU)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Compliance Status"
+    },
+    {
+      "fieldname": "compliance_status",
+      "fieldtype": "Select",
+      "label": "Compliance Status",
+      "options": "\nCompliant\nNon-Compliant\nPartially Compliant\nPending",
+      "default": "Pending",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "remarks",
+      "fieldtype": "Small Text",
+      "label": "Remarks"
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "RPO Compliance Record",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1, "delete": 1, "email": 1, "export": 1, "print": 1,
+      "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1
+    },
+    {
+      "create": 1, "email": 1, "export": 1, "print": 1,
+      "read": 1, "report": 1, "role": "All", "share": 1, "write": 1
+    }
+  ],
+  "title_field": "compliance_year",
+  "track_changes": 1
+}

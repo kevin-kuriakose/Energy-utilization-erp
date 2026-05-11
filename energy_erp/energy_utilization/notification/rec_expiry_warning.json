@@ -1,0 +1,17 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "doc.status == 'Available'",
+  "creation": "2024-01-01 00:00:00.000000",
+  "date_changed": "expiry_date",
+  "days_in_advance": 30,
+  "doctype": "Notification",
+  "document_type": "REC Certificate",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>REC Certificate <strong>{{ doc.rec_number }}</strong> for {{ doc.renewable_asset }} ({{ doc.quantity_mwh }} MWh, Registry: {{ doc.registry }}) will expire in <strong>30 days</strong> on {{ doc.expiry_date }}. Please arrange trading on IEX/PXIL before expiry to avoid forfeiture.</p>",
+  "name": "REC Expiry Warning 30 Days",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "REC Certificate Expiring in 30 Days — {{ doc.rec_number }}"
+}

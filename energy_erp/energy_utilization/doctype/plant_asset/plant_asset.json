@@ -1,0 +1,151 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "asset_name",
+    "asset_type",
+    "power_plant",
+    "generating_unit_ref",
+    "column_break_1",
+    "make",
+    "model",
+    "serial_number",
+    "commission_date",
+    "section_break_specs",
+    "rated_capacity",
+    "rated_voltage",
+    "rated_current",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EPA-.YYYY.-.#####",
+      "default": "EPA-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "asset_name",
+      "fieldtype": "Data",
+      "label": "Asset Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "asset_type",
+      "fieldtype": "Select",
+      "label": "Asset Type",
+      "options": "\nTurbine\nBoiler\nTransformer\nGenerator\nPump\nCompressor\nHeat Exchanger\nCooling Tower\nControl System\nOther",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "power_plant",
+      "fieldtype": "Link",
+      "label": "Power Plant",
+      "options": "Power Plant",
+      "reqd": 1
+    },
+    {
+      "fieldname": "generating_unit_ref",
+      "fieldtype": "Data",
+      "label": "Generating Unit Reference"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "make",
+      "fieldtype": "Data",
+      "label": "Make"
+    },
+    {
+      "fieldname": "model",
+      "fieldtype": "Data",
+      "label": "Model"
+    },
+    {
+      "fieldname": "serial_number",
+      "fieldtype": "Data",
+      "label": "Serial Number"
+    },
+    {
+      "fieldname": "commission_date",
+      "fieldtype": "Date",
+      "label": "Commission Date"
+    },
+    {
+      "fieldname": "section_break_specs",
+      "fieldtype": "Section Break",
+      "label": "Rated Specifications"
+    },
+    {
+      "fieldname": "rated_capacity",
+      "fieldtype": "Data",
+      "label": "Rated Capacity"
+    },
+    {
+      "fieldname": "rated_voltage",
+      "fieldtype": "Data",
+      "label": "Rated Voltage"
+    },
+    {
+      "fieldname": "rated_current",
+      "fieldtype": "Data",
+      "label": "Rated Current"
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nOperational\nUnder Maintenance\nDecommissioned\nStandby",
+      "default": "Operational",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Plant Asset",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "title_field": "asset_name",
+  "track_changes": 1
+}

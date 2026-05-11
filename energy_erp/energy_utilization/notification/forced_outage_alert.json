@@ -1,0 +1,15 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "doc.outage_type == 'Forced Outage'",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Outage Report",
+  "enabled": 1,
+  "event": "Save",
+  "message": "<p>A Forced Outage has been reported for <strong>{{ doc.generating_unit }}</strong> at {{ doc.power_plant }}. Outage started: {{ doc.outage_start }}. Please ensure SLDC is notified within 30 minutes. SLDC Notification Ref: {{ doc.sldc_notification_ref or 'Not yet filed' }}.</p>",
+  "name": "Forced Outage Alert",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "FORCED OUTAGE — {{ doc.generating_unit }} at {{ doc.power_plant }}"
+}

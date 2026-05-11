@@ -1,0 +1,230 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "work_order_title",
+    "plant_asset",
+    "power_plant",
+    "maintenance_type",
+    "priority",
+    "column_break_1",
+    "scheduled_start_date",
+    "scheduled_end_date",
+    "actual_start_date",
+    "actual_end_date",
+    "section_break_team",
+    "assigned_team",
+    "supervisor",
+    "column_break_2",
+    "estimated_downtime_hours",
+    "actual_downtime_hours",
+    "section_break_description",
+    "work_description",
+    "root_cause",
+    "section_break_parts",
+    "parts_used",
+    "section_break_cost",
+    "total_parts_cost",
+    "labour_cost",
+    "total_cost",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EMWO-.YYYY.-.#####",
+      "default": "EMWO-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "work_order_title",
+      "fieldtype": "Data",
+      "label": "Work Order Title",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "plant_asset",
+      "fieldtype": "Link",
+      "label": "Plant Asset",
+      "options": "Plant Asset",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "power_plant",
+      "fieldtype": "Link",
+      "label": "Power Plant",
+      "options": "Power Plant",
+      "reqd": 1
+    },
+    {
+      "fieldname": "maintenance_type",
+      "fieldtype": "Select",
+      "label": "Maintenance Type",
+      "options": "\nPreventive (PM)\nCorrective (CM)\nOverhaul (OM)\nPredictive\nBreakdown",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "priority",
+      "fieldtype": "Select",
+      "label": "Priority",
+      "options": "\nLow\nMedium\nHigh\nCritical",
+      "default": "Medium"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "scheduled_start_date",
+      "fieldtype": "Date",
+      "label": "Scheduled Start Date"
+    },
+    {
+      "fieldname": "scheduled_end_date",
+      "fieldtype": "Date",
+      "label": "Scheduled End Date"
+    },
+    {
+      "fieldname": "actual_start_date",
+      "fieldtype": "Date",
+      "label": "Actual Start Date"
+    },
+    {
+      "fieldname": "actual_end_date",
+      "fieldtype": "Date",
+      "label": "Actual End Date"
+    },
+    {
+      "fieldname": "section_break_team",
+      "fieldtype": "Section Break",
+      "label": "Team Details"
+    },
+    {
+      "fieldname": "assigned_team",
+      "fieldtype": "Data",
+      "label": "Assigned Team"
+    },
+    {
+      "fieldname": "supervisor",
+      "fieldtype": "Data",
+      "label": "Supervisor"
+    },
+    {
+      "fieldname": "column_break_2",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "estimated_downtime_hours",
+      "fieldtype": "Float",
+      "label": "Estimated Downtime (hours)"
+    },
+    {
+      "fieldname": "actual_downtime_hours",
+      "fieldtype": "Float",
+      "label": "Actual Downtime (hours)"
+    },
+    {
+      "fieldname": "section_break_description",
+      "fieldtype": "Section Break",
+      "label": "Work Description"
+    },
+    {
+      "fieldname": "work_description",
+      "fieldtype": "Small Text",
+      "label": "Work Description"
+    },
+    {
+      "fieldname": "root_cause",
+      "fieldtype": "Small Text",
+      "label": "Root Cause"
+    },
+    {
+      "fieldname": "section_break_parts",
+      "fieldtype": "Section Break",
+      "label": "Parts Used"
+    },
+    {
+      "fieldname": "parts_used",
+      "fieldtype": "Table",
+      "label": "Parts Used",
+      "options": "Part Line"
+    },
+    {
+      "fieldname": "section_break_cost",
+      "fieldtype": "Section Break",
+      "label": "Cost Summary"
+    },
+    {
+      "fieldname": "total_parts_cost",
+      "fieldtype": "Currency",
+      "label": "Total Parts Cost",
+      "read_only": 1
+    },
+    {
+      "fieldname": "labour_cost",
+      "fieldtype": "Currency",
+      "label": "Labour Cost"
+    },
+    {
+      "fieldname": "total_cost",
+      "fieldtype": "Currency",
+      "label": "Total Cost",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nOpen\nIn Progress\nCompleted\nCancelled",
+      "default": "Open",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Maintenance Work Order",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "title_field": "work_order_title",
+  "track_changes": 1
+}

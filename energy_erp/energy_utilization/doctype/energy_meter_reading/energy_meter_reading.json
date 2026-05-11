@@ -1,0 +1,134 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "reading_date",
+    "feeder",
+    "meter_number",
+    "consumer_account_no",
+    "column_break_1",
+    "previous_reading",
+    "current_reading",
+    "units_consumed",
+    "max_demand_kw",
+    "multiplying_factor",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EEMR-.YYYY.-.#####",
+      "default": "EEMR-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "reading_date",
+      "fieldtype": "Date",
+      "label": "Reading Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "feeder",
+      "fieldtype": "Link",
+      "label": "Feeder",
+      "options": "Feeder",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "meter_number",
+      "fieldtype": "Data",
+      "label": "Meter Number",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "consumer_account_no",
+      "fieldtype": "Data",
+      "label": "Consumer Account No."
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "previous_reading",
+      "fieldtype": "Float",
+      "label": "Previous Reading (kWh)"
+    },
+    {
+      "fieldname": "current_reading",
+      "fieldtype": "Float",
+      "label": "Current Reading (kWh)"
+    },
+    {
+      "fieldname": "units_consumed",
+      "fieldtype": "Float",
+      "label": "Units Consumed (kWh)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "max_demand_kw",
+      "fieldtype": "Float",
+      "label": "Max Demand (kW)"
+    },
+    {
+      "fieldname": "multiplying_factor",
+      "fieldtype": "Float",
+      "label": "Multiplying Factor",
+      "default": "1"
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nDraft\nVerified\nBilled",
+      "default": "Draft",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Energy Meter Reading",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "title_field": "meter_number",
+  "track_changes": 1
+}

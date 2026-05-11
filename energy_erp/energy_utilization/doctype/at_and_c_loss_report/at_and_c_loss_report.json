@@ -1,0 +1,163 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "report_month",
+    "feeder",
+    "substation",
+    "discom_zone",
+    "column_break_1",
+    "energy_input_mu",
+    "energy_billed_mu",
+    "energy_collected_mu",
+    "atc_loss_percent",
+    "target_loss_percent",
+    "section_break_details",
+    "technical_loss_percent",
+    "commercial_loss_percent",
+    "column_break_2",
+    "loss_variance_percent",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EATC-.YYYY.-.#####",
+      "default": "EATC-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "report_month",
+      "fieldtype": "Date",
+      "label": "Report Month",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "feeder",
+      "fieldtype": "Link",
+      "label": "Feeder",
+      "options": "Feeder",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "substation",
+      "fieldtype": "Link",
+      "label": "Substation",
+      "options": "Substation"
+    },
+    {
+      "fieldname": "discom_zone",
+      "fieldtype": "Data",
+      "label": "DISCOM Zone"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "energy_input_mu",
+      "fieldtype": "Float",
+      "label": "Energy Input (MU)",
+      "reqd": 1
+    },
+    {
+      "fieldname": "energy_billed_mu",
+      "fieldtype": "Float",
+      "label": "Energy Billed (MU)"
+    },
+    {
+      "fieldname": "energy_collected_mu",
+      "fieldtype": "Float",
+      "label": "Energy Collected (MU)"
+    },
+    {
+      "fieldname": "atc_loss_percent",
+      "fieldtype": "Percent",
+      "label": "AT&C Loss (%)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "target_loss_percent",
+      "fieldtype": "Percent",
+      "label": "Target Loss (%)"
+    },
+    {
+      "fieldname": "section_break_details",
+      "fieldtype": "Section Break",
+      "label": "Loss Breakup"
+    },
+    {
+      "fieldname": "technical_loss_percent",
+      "fieldtype": "Percent",
+      "label": "Technical Loss (%)"
+    },
+    {
+      "fieldname": "commercial_loss_percent",
+      "fieldtype": "Percent",
+      "label": "Commercial Loss (%)"
+    },
+    {
+      "fieldname": "column_break_2",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "loss_variance_percent",
+      "fieldtype": "Percent",
+      "label": "Loss vs Target Variance (%)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nDraft\nSubmitted\nApproved",
+      "default": "Draft",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "AT and C Loss Report",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "title_field": "report_month",
+  "track_changes": 1
+}

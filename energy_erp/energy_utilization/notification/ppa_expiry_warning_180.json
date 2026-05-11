@@ -1,0 +1,17 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "",
+  "creation": "2024-01-01 00:00:00.000000",
+  "date_changed": "ppa_end_date",
+  "days_in_advance": 180,
+  "doctype": "Notification",
+  "document_type": "Power Purchase Agreement",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>Power Purchase Agreement <strong>{{ doc.ppa_name }}</strong> with {{ doc.buyer_name }} for plant {{ doc.power_plant }} will expire in <strong>180 days</strong> on {{ doc.ppa_end_date }}. Contracted Capacity: {{ doc.contracted_capacity_mw }} MW. Please initiate PPA renewal proceedings.</p>",
+  "name": "PPA Expiry Warning 180 Days",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "PPA Expiry in 180 Days — {{ doc.ppa_name }} ({{ doc.power_plant }})"
+}

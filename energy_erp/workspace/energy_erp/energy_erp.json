@@ -1,0 +1,272 @@
+{
+  "category": "Modules",
+  "charts": [],
+  "content": "[{\"type\": \"card\", \"data\": {\"card_name\": \"Power Generation\", \"col\": 4, \"links\": [{\"label\": \"Power Plant\", \"link_to\": \"Power Plant\", \"type\": \"DocType\"}, {\"label\": \"Generating Unit\", \"link_to\": \"Generating Unit\", \"type\": \"DocType\"}, {\"label\": \"Generation Log\", \"link_to\": \"Generation Log\", \"type\": \"DocType\"}, {\"label\": \"Outage Report\", \"link_to\": \"Outage Report\", \"type\": \"DocType\"}, {\"label\": \"Energy Scheduling Order\", \"link_to\": \"Energy Scheduling Order\", \"type\": \"DocType\"}, {\"label\": \"Deviation Settlement\", \"link_to\": \"Deviation Settlement\", \"type\": \"DocType\"}]}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Renewable Energy\", \"col\": 4, \"links\": [{\"label\": \"Renewable Asset\", \"link_to\": \"Renewable Asset\", \"type\": \"DocType\"}, {\"label\": \"Irradiance and Weather Log\", \"link_to\": \"Irradiance and Weather Log\", \"type\": \"DocType\"}, {\"label\": \"REC Certificate\", \"link_to\": \"REC Certificate\", \"type\": \"DocType\"}, {\"label\": \"RPO Compliance Record\", \"link_to\": \"RPO Compliance Record\", \"type\": \"DocType\"}, {\"label\": \"RPO Category\", \"link_to\": \"RPO Category\", \"type\": \"DocType\"}]}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Fuel Management\", \"col\": 4, \"links\": [{\"label\": \"Fuel Supply Agreement\", \"link_to\": \"Fuel Supply Agreement\", \"type\": \"DocType\"}, {\"label\": \"Fuel Receipt\", \"link_to\": \"Fuel Receipt\", \"type\": \"DocType\"}, {\"label\": \"Fuel Stock Entry\", \"link_to\": \"Fuel Stock Entry\", \"type\": \"DocType\"}, {\"label\": \"Fuel Consumption Log\", \"link_to\": \"Fuel Consumption Log\", \"type\": \"DocType\"}, {\"label\": \"Fuel Quality Test\", \"link_to\": \"Fuel Quality Test\", \"type\": \"DocType\"}, {\"label\": \"Fuel Grade\", \"link_to\": \"Fuel Grade\", \"type\": \"DocType\"}]}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Grid Distribution\", \"col\": 4, \"links\": [{\"label\": \"Substation\", \"link_to\": \"Substation\", \"type\": \"DocType\"}, {\"label\": \"Feeder\", \"link_to\": \"Feeder\", \"type\": \"DocType\"}, {\"label\": \"Energy Meter Reading\", \"link_to\": \"Energy Meter Reading\", \"type\": \"DocType\"}, {\"label\": \"AT and C Loss Report\", \"link_to\": \"AT and C Loss Report\", \"type\": \"DocType\"}, {\"label\": \"Grid Fault Report\", \"link_to\": \"Grid Fault Report\", \"type\": \"DocType\"}, {\"label\": \"Voltage Level\", \"link_to\": \"Voltage Level\", \"type\": \"DocType\"}]}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Asset Management\", \"col\": 4, \"links\": [{\"label\": \"Plant Asset\", \"link_to\": \"Plant Asset\", \"type\": \"DocType\"}, {\"label\": \"Maintenance Work Order\", \"link_to\": \"Maintenance Work Order\", \"type\": \"DocType\"}, {\"label\": \"Annual Overhaul Plan\", \"link_to\": \"Annual Overhaul Plan\", \"type\": \"DocType\"}, {\"label\": \"Asset Inspection Report\", \"link_to\": \"Asset Inspection Report\", \"type\": \"DocType\"}, {\"label\": \"Spare Parts Inventory\", \"link_to\": \"Spare Parts Inventory\", \"type\": \"DocType\"}, {\"label\": \"Capital Project\", \"link_to\": \"Capital Project\", \"type\": \"DocType\"}]}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Finance and Regulatory\", \"col\": 4, \"links\": [{\"label\": \"Energy Bill\", \"link_to\": \"Energy Bill\", \"type\": \"DocType\"}, {\"label\": \"Tariff Order\", \"link_to\": \"Tariff Order\", \"type\": \"DocType\"}, {\"label\": \"Power Purchase Agreement\", \"link_to\": \"Power Purchase Agreement\", \"type\": \"DocType\"}, {\"label\": \"BEE Energy Audit\", \"link_to\": \"BEE Energy Audit\", \"type\": \"DocType\"}, {\"label\": \"Environmental Compliance Report\", \"link_to\": \"Environmental Compliance Report\", \"type\": \"DocType\"}, {\"label\": \"Regulatory Body\", \"link_to\": \"Regulatory Body\", \"type\": \"DocType\"}]}}]",
+  "doctype": "Workspace",
+  "for_user": "",
+  "icon": "uil uil-bolt",
+  "is_hidden": 0,
+  "label": "Energy Utilization",
+  "module": "Energy Utilization",
+  "name": "Energy Utilization",
+  "public": 1,
+  "shortcuts": [
+    {
+      "label": "Power Plant",
+      "link_to": "Power Plant",
+      "type": "DocType",
+      "color": "Blue",
+      "icon": "uil uil-bolt",
+      "name": "sc-pp"
+    },
+    {
+      "label": "Substation",
+      "link_to": "Substation",
+      "type": "DocType",
+      "color": "Green",
+      "icon": "uil uil-chart",
+      "name": "sc-sub"
+    },
+    {
+      "label": "Tariff Order",
+      "link_to": "Tariff Order",
+      "type": "DocType",
+      "color": "Orange",
+      "icon": "uil uil-file-alt",
+      "name": "sc-to"
+    },
+    {
+      "label": "Renewable Asset",
+      "link_to": "Renewable Asset",
+      "type": "DocType",
+      "color": "Green",
+      "icon": "uil uil-sun",
+      "name": "sc-ra"
+    },
+    {
+      "label": "Plant Asset",
+      "link_to": "Plant Asset",
+      "type": "DocType",
+      "color": "Blue",
+      "icon": "uil uil-wrench",
+      "name": "sc-pa"
+    },
+    {
+      "label": "Fuel Grade",
+      "link_to": "Fuel Grade",
+      "type": "DocType",
+      "color": "Grey",
+      "icon": "uil uil-fire",
+      "name": "sc-fg"
+    },
+    {
+      "label": "Voltage Level",
+      "link_to": "Voltage Level",
+      "type": "DocType",
+      "color": "Grey",
+      "icon": "uil uil-channel",
+      "name": "sc-vl"
+    },
+    {
+      "label": "Regulatory Body",
+      "link_to": "Regulatory Body",
+      "type": "DocType",
+      "color": "Grey",
+      "icon": "uil uil-building",
+      "name": "sc-rb"
+    },
+    {
+      "label": "Generating Unit",
+      "link_to": "Generating Unit",
+      "type": "DocType",
+      "color": "Blue",
+      "icon": "uil uil-bolt",
+      "name": "sc-gu"
+    },
+    {
+      "label": "Power Purchase Agreement",
+      "link_to": "Power Purchase Agreement",
+      "type": "DocType",
+      "color": "Orange",
+      "icon": "uil uil-file-contract",
+      "name": "sc-ppa"
+    },
+    {
+      "label": "Feeder",
+      "link_to": "Feeder",
+      "type": "DocType",
+      "color": "Green",
+      "icon": "uil uil-channel",
+      "name": "sc-fdr"
+    },
+    {
+      "label": "Fuel Supply Agreement",
+      "link_to": "Fuel Supply Agreement",
+      "type": "DocType",
+      "color": "Orange",
+      "icon": "uil uil-truck",
+      "name": "sc-fsa"
+    },
+    {
+      "label": "Energy Scheduling Order",
+      "link_to": "Energy Scheduling Order",
+      "type": "DocType",
+      "color": "Blue",
+      "icon": "uil uil-schedule",
+      "name": "sc-eso"
+    },
+    {
+      "label": "Maintenance Work Order",
+      "link_to": "Maintenance Work Order",
+      "type": "DocType",
+      "color": "Red",
+      "icon": "uil uil-wrench",
+      "name": "sc-mwo"
+    },
+    {
+      "label": "Annual Overhaul Plan",
+      "link_to": "Annual Overhaul Plan",
+      "type": "DocType",
+      "color": "Purple",
+      "icon": "uil uil-calendar-alt",
+      "name": "sc-aop"
+    },
+    {
+      "label": "Asset Inspection Report",
+      "link_to": "Asset Inspection Report",
+      "type": "DocType",
+      "color": "Blue",
+      "icon": "uil uil-clipboard-alt",
+      "name": "sc-air"
+    },
+    {
+      "label": "Generation Log",
+      "link_to": "Generation Log",
+      "type": "DocType",
+      "color": "Blue",
+      "icon": "uil uil-chart-line",
+      "name": "sc-gl"
+    },
+    {
+      "label": "Outage Report",
+      "link_to": "Outage Report",
+      "type": "DocType",
+      "color": "Red",
+      "icon": "uil uil-exclamation-triangle",
+      "name": "sc-or"
+    },
+    {
+      "label": "Fuel Receipt",
+      "link_to": "Fuel Receipt",
+      "type": "DocType",
+      "color": "Orange",
+      "icon": "uil uil-truck-loading",
+      "name": "sc-fr"
+    },
+    {
+      "label": "Fuel Stock Entry",
+      "link_to": "Fuel Stock Entry",
+      "type": "DocType",
+      "color": "Orange",
+      "icon": "uil uil-warehouse",
+      "name": "sc-fse"
+    },
+    {
+      "label": "Fuel Consumption Log",
+      "link_to": "Fuel Consumption Log",
+      "type": "DocType",
+      "color": "Red",
+      "icon": "uil uil-fire",
+      "name": "sc-fcl"
+    },
+    {
+      "label": "Energy Meter Reading",
+      "link_to": "Energy Meter Reading",
+      "type": "DocType",
+      "color": "Green",
+      "icon": "uil uil-tachometer-fast",
+      "name": "sc-emr"
+    },
+    {
+      "label": "AT and C Loss Report",
+      "link_to": "AT and C Loss Report",
+      "type": "DocType",
+      "color": "Red",
+      "icon": "uil uil-chart-down",
+      "name": "sc-atc"
+    },
+    {
+      "label": "Grid Fault Report",
+      "link_to": "Grid Fault Report",
+      "type": "DocType",
+      "color": "Red",
+      "icon": "uil uil-exclamation-circle",
+      "name": "sc-gfr"
+    },
+    {
+      "label": "REC Certificate",
+      "link_to": "REC Certificate",
+      "type": "DocType",
+      "color": "Green",
+      "icon": "uil uil-award",
+      "name": "sc-rec"
+    },
+    {
+      "label": "RPO Compliance Record",
+      "link_to": "RPO Compliance Record",
+      "type": "DocType",
+      "color": "Blue",
+      "icon": "uil uil-check-circle",
+      "name": "sc-rpo"
+    },
+    {
+      "label": "Irradiance and Weather Log",
+      "link_to": "Irradiance and Weather Log",
+      "type": "DocType",
+      "color": "Yellow",
+      "icon": "uil uil-sun",
+      "name": "sc-iwl"
+    },
+    {
+      "label": "Energy Bill",
+      "link_to": "Energy Bill",
+      "type": "DocType",
+      "color": "Orange",
+      "icon": "uil uil-bill",
+      "name": "sc-eb"
+    },
+    {
+      "label": "Deviation Settlement",
+      "link_to": "Deviation Settlement",
+      "type": "DocType",
+      "color": "Purple",
+      "icon": "uil uil-exchange",
+      "name": "sc-ds"
+    },
+    {
+      "label": "BEE Energy Audit",
+      "link_to": "BEE Energy Audit",
+      "type": "DocType",
+      "color": "Green",
+      "icon": "uil uil-leaf",
+      "name": "sc-bee"
+    },
+    {
+      "label": "Capital Project",
+      "link_to": "Capital Project",
+      "type": "DocType",
+      "color": "Blue",
+      "icon": "uil uil-construction",
+      "name": "sc-cp"
+    },
+    {
+      "label": "Environmental Compliance Report",
+      "link_to": "Environmental Compliance Report",
+      "type": "DocType",
+      "color": "Green",
+      "icon": "uil uil-trees",
+      "name": "sc-ecr"
+    }
+  ],
+  "title": "Energy Utilization"
+}

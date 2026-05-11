@@ -1,0 +1,157 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "settlement_title",
+    "settlement_date",
+    "power_plant",
+    "energy_scheduling_order",
+    "column_break_1",
+    "settlement_period",
+    "scheduled_mu",
+    "actual_mu",
+    "deviation_mu",
+    "section_break_dsm",
+    "deviation_band",
+    "dsm_rate",
+    "net_payable",
+    "column_break_2",
+    "payable_receivable",
+    "settlement_ref",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EDS-.YYYY.-.#####",
+      "default": "EDS-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "settlement_title",
+      "fieldtype": "Data",
+      "label": "Settlement Title",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "settlement_date",
+      "fieldtype": "Date",
+      "label": "Settlement Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "power_plant",
+      "fieldtype": "Link",
+      "label": "Power Plant",
+      "options": "Power Plant",
+      "reqd": 1
+    },
+    {
+      "fieldname": "energy_scheduling_order",
+      "fieldtype": "Link",
+      "label": "Energy Scheduling Order",
+      "options": "Energy Scheduling Order"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "settlement_period",
+      "fieldtype": "Data",
+      "label": "Settlement Period"
+    },
+    {
+      "fieldname": "scheduled_mu",
+      "fieldtype": "Float",
+      "label": "Scheduled (MU)"
+    },
+    {
+      "fieldname": "actual_mu",
+      "fieldtype": "Float",
+      "label": "Actual (MU)"
+    },
+    {
+      "fieldname": "deviation_mu",
+      "fieldtype": "Float",
+      "label": "Deviation (MU)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_dsm",
+      "fieldtype": "Section Break",
+      "label": "DSM Computation"
+    },
+    {
+      "fieldname": "deviation_band",
+      "fieldtype": "Select",
+      "label": "Deviation Band",
+      "options": "\nWithin ±12%\n12-15%\n15-25%\nAbove 25%"
+    },
+    {
+      "fieldname": "dsm_rate",
+      "fieldtype": "Float",
+      "label": "DSM Rate (Rs/kWh)"
+    },
+    {
+      "fieldname": "net_payable",
+      "fieldtype": "Currency",
+      "label": "Net Payable / Receivable",
+      "read_only": 1
+    },
+    {
+      "fieldname": "column_break_2",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "payable_receivable",
+      "fieldtype": "Select",
+      "label": "Payable / Receivable",
+      "options": "\nPayable\nReceivable\nNil"
+    },
+    {
+      "fieldname": "settlement_ref",
+      "fieldtype": "Data",
+      "label": "Settlement Reference"
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nDraft\nSettled\nDisputed\nCancelled",
+      "default": "Draft",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Deviation Settlement",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1, "delete": 1, "email": 1, "export": 1, "print": 1,
+      "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1
+    },
+    {
+      "create": 1, "email": 1, "export": 1, "print": 1,
+      "read": 1, "report": 1, "role": "All", "share": 1, "write": 1
+    }
+  ],
+  "title_field": "settlement_title",
+  "track_changes": 1
+}

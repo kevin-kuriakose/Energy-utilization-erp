@@ -1,0 +1,17 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "",
+  "creation": "2024-01-01 00:00:00.000000",
+  "date_changed": "consent_expiry_date",
+  "days_in_advance": 60,
+  "doctype": "Notification",
+  "document_type": "Environmental Compliance Report",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>Consent to Operate for <strong>{{ doc.power_plant }}</strong> (Consent No: {{ doc.consent_number }}) will expire in <strong>60 days</strong> on {{ doc.consent_expiry_date }}. Please initiate renewal with SPCB/CPCB immediately to avoid regulatory non-compliance.</p>",
+  "name": "Consent to Operate Expiry Warning",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Consent to Operate Expiring in 60 Days — {{ doc.power_plant }}"
+}

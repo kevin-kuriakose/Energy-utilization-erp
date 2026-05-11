@@ -1,0 +1,172 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "fault_title",
+    "feeder",
+    "substation",
+    "fault_type",
+    "fault_datetime",
+    "column_break_1",
+    "restoration_datetime",
+    "affected_consumers",
+    "outage_duration_minutes",
+    "section_break_impact",
+    "saidi_minutes",
+    "saifi_count",
+    "energy_not_served_mu",
+    "column_break_2",
+    "fault_cause",
+    "corrective_action",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EGFR-.YYYY.-.#####",
+      "default": "EGFR-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "fault_title",
+      "fieldtype": "Data",
+      "label": "Fault Title",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "feeder",
+      "fieldtype": "Link",
+      "label": "Feeder",
+      "options": "Feeder",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "substation",
+      "fieldtype": "Link",
+      "label": "Substation",
+      "options": "Substation"
+    },
+    {
+      "fieldname": "fault_type",
+      "fieldtype": "Select",
+      "label": "Fault Type",
+      "options": "\nConductor Snapping\nTree Falling\nAnimal Contact\nEquipment Failure\nLightning\nLoad Shedding\nOverloading\nOther",
+      "reqd": 1
+    },
+    {
+      "fieldname": "fault_datetime",
+      "fieldtype": "Datetime",
+      "label": "Fault Date/Time",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "restoration_datetime",
+      "fieldtype": "Datetime",
+      "label": "Restoration Date/Time"
+    },
+    {
+      "fieldname": "affected_consumers",
+      "fieldtype": "Int",
+      "label": "Affected Consumers"
+    },
+    {
+      "fieldname": "outage_duration_minutes",
+      "fieldtype": "Float",
+      "label": "Outage Duration (minutes)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_impact",
+      "fieldtype": "Section Break",
+      "label": "Reliability Impact"
+    },
+    {
+      "fieldname": "saidi_minutes",
+      "fieldtype": "Float",
+      "label": "SAIDI (minutes)"
+    },
+    {
+      "fieldname": "saifi_count",
+      "fieldtype": "Float",
+      "label": "SAIFI (interruptions)"
+    },
+    {
+      "fieldname": "energy_not_served_mu",
+      "fieldtype": "Float",
+      "label": "Energy Not Served (MU)"
+    },
+    {
+      "fieldname": "column_break_2",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "fault_cause",
+      "fieldtype": "Small Text",
+      "label": "Fault Cause"
+    },
+    {
+      "fieldname": "corrective_action",
+      "fieldtype": "Small Text",
+      "label": "Corrective Action"
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nOpen\nRestored\nClosed",
+      "default": "Open",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Grid Fault Report",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "title_field": "fault_title",
+  "track_changes": 1
+}

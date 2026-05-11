@@ -1,0 +1,131 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "log_datetime",
+    "renewable_asset",
+    "log_interval",
+    "column_break_1",
+    "ghi_kwh_m2",
+    "dni_kwh_m2",
+    "wind_speed_ms",
+    "ambient_temp_c",
+    "section_break_performance",
+    "actual_generation_kwh",
+    "theoretical_generation_kwh",
+    "performance_ratio_percent",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EIWL-.YYYY.-.#####",
+      "default": "EIWL-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "log_datetime",
+      "fieldtype": "Datetime",
+      "label": "Log Date/Time",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "renewable_asset",
+      "fieldtype": "Link",
+      "label": "Renewable Asset",
+      "options": "Renewable Asset",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "log_interval",
+      "fieldtype": "Select",
+      "label": "Log Interval",
+      "options": "\n15 Minutes\nHourly\nDaily",
+      "default": "15 Minutes"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "ghi_kwh_m2",
+      "fieldtype": "Float",
+      "label": "GHI (kWh/m2)"
+    },
+    {
+      "fieldname": "dni_kwh_m2",
+      "fieldtype": "Float",
+      "label": "DNI (kWh/m2)"
+    },
+    {
+      "fieldname": "wind_speed_ms",
+      "fieldtype": "Float",
+      "label": "Wind Speed (m/s)"
+    },
+    {
+      "fieldname": "ambient_temp_c",
+      "fieldtype": "Float",
+      "label": "Ambient Temperature (°C)"
+    },
+    {
+      "fieldname": "section_break_performance",
+      "fieldtype": "Section Break",
+      "label": "Performance"
+    },
+    {
+      "fieldname": "actual_generation_kwh",
+      "fieldtype": "Float",
+      "label": "Actual Generation (kWh)"
+    },
+    {
+      "fieldname": "theoretical_generation_kwh",
+      "fieldtype": "Float",
+      "label": "Theoretical Generation (kWh)"
+    },
+    {
+      "fieldname": "performance_ratio_percent",
+      "fieldtype": "Percent",
+      "label": "Performance Ratio (%)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nDraft\nConfirmed",
+      "default": "Draft",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Irradiance and Weather Log",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1, "delete": 1, "email": 1, "export": 1, "print": 1,
+      "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1
+    },
+    {
+      "create": 1, "email": 1, "export": 1, "print": 1,
+      "read": 1, "report": 1, "role": "All", "share": 1, "write": 1
+    }
+  ],
+  "title_field": "log_datetime",
+  "track_changes": 1
+}

@@ -1,0 +1,127 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "rec_number",
+    "renewable_asset",
+    "registry",
+    "vintage_month",
+    "column_break_1",
+    "quantity_mwh",
+    "face_value_rs",
+    "expiry_date",
+    "status",
+    "section_break_trading",
+    "traded_on",
+    "trade_price_rs",
+    "buyer_details"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EREC-.YYYY.-.#####",
+      "default": "EREC-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "rec_number",
+      "fieldtype": "Data",
+      "label": "REC Number",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "renewable_asset",
+      "fieldtype": "Link",
+      "label": "Renewable Asset",
+      "options": "Renewable Asset",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "registry",
+      "fieldtype": "Select",
+      "label": "Registry",
+      "options": "\nIEX\nPXIL",
+      "reqd": 1
+    },
+    {
+      "fieldname": "vintage_month",
+      "fieldtype": "Date",
+      "label": "Vintage Month",
+      "reqd": 1
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "quantity_mwh",
+      "fieldtype": "Float",
+      "label": "Quantity (MWh)",
+      "reqd": 1
+    },
+    {
+      "fieldname": "face_value_rs",
+      "fieldtype": "Currency",
+      "label": "Face Value (Rs/MWh)"
+    },
+    {
+      "fieldname": "expiry_date",
+      "fieldtype": "Date",
+      "label": "Expiry Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nIssued\nAvailable\nSold\nRedeemed\nExpired",
+      "default": "Issued",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "section_break_trading",
+      "fieldtype": "Section Break",
+      "label": "Trading Details"
+    },
+    {
+      "fieldname": "traded_on",
+      "fieldtype": "Date",
+      "label": "Traded On"
+    },
+    {
+      "fieldname": "trade_price_rs",
+      "fieldtype": "Currency",
+      "label": "Trade Price (Rs/MWh)"
+    },
+    {
+      "fieldname": "buyer_details",
+      "fieldtype": "Data",
+      "label": "Buyer Details"
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "REC Certificate",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1, "delete": 1, "email": 1, "export": 1, "print": 1,
+      "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1
+    },
+    {
+      "create": 1, "email": 1, "export": 1, "print": 1,
+      "read": 1, "report": 1, "role": "All", "share": 1, "write": 1
+    }
+  ],
+  "title_field": "rec_number",
+  "track_changes": 1
+}

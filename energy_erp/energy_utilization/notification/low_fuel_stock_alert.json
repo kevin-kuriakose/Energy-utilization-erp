@@ -1,0 +1,15 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "doc.days_of_stock < 15",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Fuel Stock Entry",
+  "enabled": 1,
+  "event": "Save",
+  "message": "<p>Fuel stock at {{ doc.power_plant }} is critically low: <strong>{{ doc.days_of_stock | round(1) }} days</strong> remaining as of {{ doc.stock_date }}. Closing stock: {{ doc.closing_stock_mt }} MT. Please arrange replenishment immediately.</p>",
+  "name": "Low Fuel Stock Alert",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Low Fuel Stock Alert — {{ doc.power_plant }} ({{ doc.days_of_stock | round(1) }} days)"
+}

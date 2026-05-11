@@ -1,0 +1,48 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "generating_unit",
+    "declared_capacity_mw",
+    "actual_injection_mw",
+    "deviation_mw"
+  ],
+  "fields": [
+    {
+      "fieldname": "generating_unit",
+      "fieldtype": "Link",
+      "label": "Generating Unit",
+      "options": "Generating Unit",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "declared_capacity_mw",
+      "fieldtype": "Float",
+      "label": "Declared Capacity (MW)",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "actual_injection_mw",
+      "fieldtype": "Float",
+      "label": "Actual Injection (MW)",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "deviation_mw",
+      "fieldtype": "Float",
+      "label": "Deviation (MW)",
+      "read_only": 1,
+      "in_list_view": 1
+    }
+  ],
+  "istable": 1,
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Unit Schedule Row",
+  "owner": "Administrator",
+  "permissions": []
+}

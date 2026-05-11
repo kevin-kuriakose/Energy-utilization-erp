@@ -1,0 +1,164 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "fsa_name",
+    "power_plant",
+    "supplier",
+    "fuel_type",
+    "grade",
+    "column_break_1",
+    "fsa_number",
+    "annual_quantity_mt",
+    "start_date",
+    "end_date",
+    "section_break_pricing",
+    "base_price_rs_mt",
+    "price_escalation_percent",
+    "column_break_2",
+    "payment_terms",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EFSA-.YYYY.-.#####",
+      "default": "EFSA-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "fsa_name",
+      "fieldtype": "Data",
+      "label": "FSA Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "power_plant",
+      "fieldtype": "Link",
+      "label": "Power Plant",
+      "options": "Power Plant",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "supplier",
+      "fieldtype": "Link",
+      "label": "Supplier",
+      "options": "Supplier"
+    },
+    {
+      "fieldname": "fuel_type",
+      "fieldtype": "Select",
+      "label": "Fuel Type",
+      "options": "\nCoal\nGas\nHSD\nPet Coke\nOther",
+      "reqd": 1
+    },
+    {
+      "fieldname": "grade",
+      "fieldtype": "Link",
+      "label": "Fuel Grade",
+      "options": "Fuel Grade"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "fsa_number",
+      "fieldtype": "Data",
+      "label": "FSA Number"
+    },
+    {
+      "fieldname": "annual_quantity_mt",
+      "fieldtype": "Float",
+      "label": "Annual Quantity (MT)"
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Start Date"
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "End Date"
+    },
+    {
+      "fieldname": "section_break_pricing",
+      "fieldtype": "Section Break",
+      "label": "Pricing"
+    },
+    {
+      "fieldname": "base_price_rs_mt",
+      "fieldtype": "Float",
+      "label": "Base Price (Rs/MT)"
+    },
+    {
+      "fieldname": "price_escalation_percent",
+      "fieldtype": "Percent",
+      "label": "Price Escalation (%/year)"
+    },
+    {
+      "fieldname": "column_break_2",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "payment_terms",
+      "fieldtype": "Data",
+      "label": "Payment Terms"
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nActive\nExpired\nTerminated\nDraft",
+      "default": "Active",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Fuel Supply Agreement",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "title_field": "fsa_name",
+  "track_changes": 1
+}

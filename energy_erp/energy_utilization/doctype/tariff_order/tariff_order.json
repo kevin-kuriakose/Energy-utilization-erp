@@ -1,0 +1,156 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "tariff_order_name",
+    "regulatory_body",
+    "power_plant",
+    "column_break_1",
+    "effective_from",
+    "effective_to",
+    "order_reference",
+    "section_break_charges",
+    "fixed_charge_rs_kw",
+    "variable_charge_rs_kwh",
+    "fuel_surcharge_rs_kwh",
+    "column_break_2",
+    "incentive_rate",
+    "penalty_rate",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "ETO-.YYYY.-.#####",
+      "default": "ETO-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "tariff_order_name",
+      "fieldtype": "Data",
+      "label": "Tariff Order Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "regulatory_body",
+      "fieldtype": "Link",
+      "label": "Regulatory Body",
+      "options": "Regulatory Body",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "power_plant",
+      "fieldtype": "Link",
+      "label": "Power Plant",
+      "options": "Power Plant"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "effective_from",
+      "fieldtype": "Date",
+      "label": "Effective From",
+      "reqd": 1
+    },
+    {
+      "fieldname": "effective_to",
+      "fieldtype": "Date",
+      "label": "Effective To"
+    },
+    {
+      "fieldname": "order_reference",
+      "fieldtype": "Data",
+      "label": "Order Reference No."
+    },
+    {
+      "fieldname": "section_break_charges",
+      "fieldtype": "Section Break",
+      "label": "Tariff Components"
+    },
+    {
+      "fieldname": "fixed_charge_rs_kw",
+      "fieldtype": "Float",
+      "label": "Fixed Charge (Rs/kW/month)"
+    },
+    {
+      "fieldname": "variable_charge_rs_kwh",
+      "fieldtype": "Float",
+      "label": "Variable Charge (Rs/kWh)"
+    },
+    {
+      "fieldname": "fuel_surcharge_rs_kwh",
+      "fieldtype": "Float",
+      "label": "Fuel Surcharge (Rs/kWh)"
+    },
+    {
+      "fieldname": "column_break_2",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "incentive_rate",
+      "fieldtype": "Float",
+      "label": "Incentive Rate (Rs/kWh)"
+    },
+    {
+      "fieldname": "penalty_rate",
+      "fieldtype": "Float",
+      "label": "Penalty Rate (Rs/kWh)"
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nActive\nSuperseded\nDraft",
+      "default": "Active",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Tariff Order",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "title_field": "tariff_order_name",
+  "track_changes": 1
+}

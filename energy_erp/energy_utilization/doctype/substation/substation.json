@@ -1,0 +1,119 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "substation_name",
+    "voltage_level",
+    "transformer_capacity_mva",
+    "column_break_1",
+    "discom_zone",
+    "feeder_count",
+    "location",
+    "state",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "ESUB-.YYYY.-.#####",
+      "default": "ESUB-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "substation_name",
+      "fieldtype": "Data",
+      "label": "Substation Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "voltage_level",
+      "fieldtype": "Link",
+      "label": "Voltage Level",
+      "options": "Voltage Level",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "transformer_capacity_mva",
+      "fieldtype": "Float",
+      "label": "Transformer Capacity (MVA)"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "discom_zone",
+      "fieldtype": "Data",
+      "label": "DISCOM Zone"
+    },
+    {
+      "fieldname": "feeder_count",
+      "fieldtype": "Int",
+      "label": "Feeder Count"
+    },
+    {
+      "fieldname": "location",
+      "fieldtype": "Data",
+      "label": "Location"
+    },
+    {
+      "fieldname": "state",
+      "fieldtype": "Data",
+      "label": "State"
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nOperational\nUnder Maintenance\nDecommissioned",
+      "default": "Operational",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Substation",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "title_field": "substation_name",
+  "track_changes": 1
+}

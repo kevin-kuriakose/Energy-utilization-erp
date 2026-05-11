@@ -1,0 +1,17 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "doc.status in ('Issued', 'Overdue')",
+  "creation": "2024-01-01 00:00:00.000000",
+  "date_changed": "due_date",
+  "days_in_advance": 0,
+  "doctype": "Notification",
+  "document_type": "Energy Bill",
+  "enabled": 1,
+  "event": "Days After",
+  "message": "<p>Energy Bill <strong>{{ doc.bill_title }}</strong> for {{ doc.power_plant }} (Invoice: {{ doc.invoice_number }}) with total amount <strong>Rs {{ doc.total_amount }}</strong> was due on {{ doc.due_date }} and remains unpaid. Please follow up with the DISCOM for payment.</p>",
+  "name": "Energy Bill Overdue",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Energy Bill Overdue — {{ doc.bill_title }} ({{ doc.power_plant }})"
+}

@@ -1,0 +1,162 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "test_date",
+    "fuel_receipt",
+    "lab_reference",
+    "column_break_1",
+    "sample_type",
+    "test_method",
+    "section_break_results",
+    "gcv_as_received",
+    "gcv_air_dried",
+    "moisture_percent",
+    "ash_percent",
+    "column_break_2",
+    "sulphur_percent",
+    "volatile_matter_percent",
+    "fixed_carbon_percent",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EFQT-.YYYY.-.#####",
+      "default": "EFQT-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "test_date",
+      "fieldtype": "Date",
+      "label": "Test Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "fuel_receipt",
+      "fieldtype": "Link",
+      "label": "Fuel Receipt",
+      "options": "Fuel Receipt",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "lab_reference",
+      "fieldtype": "Data",
+      "label": "Lab Reference No.",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "sample_type",
+      "fieldtype": "Select",
+      "label": "Sample Type",
+      "options": "\nAs Received\nAir Dried\nDry Basis"
+    },
+    {
+      "fieldname": "test_method",
+      "fieldtype": "Data",
+      "label": "Test Method (IS/ASTM)"
+    },
+    {
+      "fieldname": "section_break_results",
+      "fieldtype": "Section Break",
+      "label": "Lab Results"
+    },
+    {
+      "fieldname": "gcv_as_received",
+      "fieldtype": "Float",
+      "label": "GCV As Received (kcal/kg)"
+    },
+    {
+      "fieldname": "gcv_air_dried",
+      "fieldtype": "Float",
+      "label": "GCV Air Dried (kcal/kg)"
+    },
+    {
+      "fieldname": "moisture_percent",
+      "fieldtype": "Percent",
+      "label": "Moisture (%)"
+    },
+    {
+      "fieldname": "ash_percent",
+      "fieldtype": "Percent",
+      "label": "Ash (%)"
+    },
+    {
+      "fieldname": "column_break_2",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "sulphur_percent",
+      "fieldtype": "Percent",
+      "label": "Sulphur (%)"
+    },
+    {
+      "fieldname": "volatile_matter_percent",
+      "fieldtype": "Percent",
+      "label": "Volatile Matter (%)"
+    },
+    {
+      "fieldname": "fixed_carbon_percent",
+      "fieldtype": "Percent",
+      "label": "Fixed Carbon (%)"
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nDraft\nVerified\nDisputed",
+      "default": "Draft",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Fuel Quality Test",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "title_field": "lab_reference",
+  "track_changes": 1
+}

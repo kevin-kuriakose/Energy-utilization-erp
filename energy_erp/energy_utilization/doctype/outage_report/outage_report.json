@@ -1,0 +1,161 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "outage_title",
+    "generating_unit",
+    "power_plant",
+    "outage_type",
+    "column_break_1",
+    "outage_start",
+    "outage_end",
+    "lost_generation_mu",
+    "section_break_cause",
+    "root_cause",
+    "corrective_action",
+    "column_break_2",
+    "notified_to_sldc",
+    "sldc_notification_ref",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EOR-.YYYY.-.#####",
+      "default": "EOR-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "outage_title",
+      "fieldtype": "Data",
+      "label": "Outage Title",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "generating_unit",
+      "fieldtype": "Link",
+      "label": "Generating Unit",
+      "options": "Generating Unit",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "power_plant",
+      "fieldtype": "Link",
+      "label": "Power Plant",
+      "options": "Power Plant",
+      "reqd": 1
+    },
+    {
+      "fieldname": "outage_type",
+      "fieldtype": "Select",
+      "label": "Outage Type",
+      "options": "\nPlanned Outage\nForced Outage\nAnnual Overhaul\nExtension of Overhaul\nPartial Load Restriction",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "outage_start",
+      "fieldtype": "Datetime",
+      "label": "Outage Start",
+      "reqd": 1
+    },
+    {
+      "fieldname": "outage_end",
+      "fieldtype": "Datetime",
+      "label": "Outage End"
+    },
+    {
+      "fieldname": "lost_generation_mu",
+      "fieldtype": "Float",
+      "label": "Lost Generation (MU)"
+    },
+    {
+      "fieldname": "section_break_cause",
+      "fieldtype": "Section Break",
+      "label": "Cause and Action"
+    },
+    {
+      "fieldname": "root_cause",
+      "fieldtype": "Small Text",
+      "label": "Root Cause"
+    },
+    {
+      "fieldname": "corrective_action",
+      "fieldtype": "Small Text",
+      "label": "Corrective Action"
+    },
+    {
+      "fieldname": "column_break_2",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "notified_to_sldc",
+      "fieldtype": "Check",
+      "label": "Notified to SLDC",
+      "default": "0"
+    },
+    {
+      "fieldname": "sldc_notification_ref",
+      "fieldtype": "Data",
+      "label": "SLDC Notification Ref"
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nOpen\nResolved\nSubmitted\nCancelled",
+      "default": "Open",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Outage Report",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "title_field": "outage_title",
+  "track_changes": 1
+}

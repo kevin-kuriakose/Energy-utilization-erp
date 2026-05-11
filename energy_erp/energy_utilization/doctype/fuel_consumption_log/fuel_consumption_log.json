@@ -1,0 +1,131 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "consumption_date",
+    "generating_unit",
+    "generation_log",
+    "fuel_type",
+    "column_break_1",
+    "quantity_mt",
+    "gcv_kcal_kg",
+    "heat_input_mkcal",
+    "sfc_kg_kwh",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EFCL-.YYYY.-.#####",
+      "default": "EFCL-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "consumption_date",
+      "fieldtype": "Date",
+      "label": "Consumption Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "generating_unit",
+      "fieldtype": "Link",
+      "label": "Generating Unit",
+      "options": "Generating Unit",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "generation_log",
+      "fieldtype": "Link",
+      "label": "Generation Log",
+      "options": "Generation Log"
+    },
+    {
+      "fieldname": "fuel_type",
+      "fieldtype": "Select",
+      "label": "Fuel Type",
+      "options": "\nCoal\nGas\nHSD\nPet Coke\nOther",
+      "reqd": 1
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "quantity_mt",
+      "fieldtype": "Float",
+      "label": "Quantity (MT)",
+      "reqd": 1
+    },
+    {
+      "fieldname": "gcv_kcal_kg",
+      "fieldtype": "Float",
+      "label": "GCV (kcal/kg)"
+    },
+    {
+      "fieldname": "heat_input_mkcal",
+      "fieldtype": "Float",
+      "label": "Heat Input (Mkcal)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "sfc_kg_kwh",
+      "fieldtype": "Float",
+      "label": "Specific Fuel Consumption (kg/kWh)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nDraft\nConfirmed",
+      "default": "Draft",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Fuel Consumption Log",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "title_field": "consumption_date",
+  "track_changes": 1
+}

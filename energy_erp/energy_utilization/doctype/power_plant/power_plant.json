@@ -1,0 +1,139 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "plant_name",
+    "plant_type",
+    "installed_capacity_mw",
+    "cea_registration_no",
+    "column_break_1",
+    "grid_connection",
+    "location",
+    "state",
+    "commissioning_date",
+    "section_break_ppa",
+    "ppa",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EPLANT-.YYYY.-.#####",
+      "default": "EPLANT-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "plant_name",
+      "fieldtype": "Data",
+      "label": "Plant Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "plant_type",
+      "fieldtype": "Select",
+      "label": "Plant Type",
+      "options": "\nThermal (Coal)\nThermal (Gas)\nNuclear\nLarge Hydro\nSmall Hydro\nSolar PV\nSolar CSP\nWind\nBiomass\nWaste-to-Energy",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "installed_capacity_mw",
+      "fieldtype": "Float",
+      "label": "Installed Capacity (MW)",
+      "reqd": 1
+    },
+    {
+      "fieldname": "cea_registration_no",
+      "fieldtype": "Data",
+      "label": "CEA Registration No."
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "grid_connection",
+      "fieldtype": "Data",
+      "label": "Grid Connection"
+    },
+    {
+      "fieldname": "location",
+      "fieldtype": "Data",
+      "label": "Location"
+    },
+    {
+      "fieldname": "state",
+      "fieldtype": "Data",
+      "label": "State"
+    },
+    {
+      "fieldname": "commissioning_date",
+      "fieldtype": "Date",
+      "label": "Commissioning Date"
+    },
+    {
+      "fieldname": "section_break_ppa",
+      "fieldtype": "Section Break",
+      "label": "PPA Details"
+    },
+    {
+      "fieldname": "ppa",
+      "fieldtype": "Link",
+      "label": "Power Purchase Agreement",
+      "options": "Power Purchase Agreement"
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nOperational\nUnder Construction\nDecommissioned\nStandby",
+      "default": "Operational",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Power Plant",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "title_field": "plant_name",
+  "track_changes": 1
+}

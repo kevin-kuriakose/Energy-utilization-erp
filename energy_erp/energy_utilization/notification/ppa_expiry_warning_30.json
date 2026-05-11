@@ -1,0 +1,17 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "",
+  "creation": "2024-01-01 00:00:00.000000",
+  "date_changed": "ppa_end_date",
+  "days_in_advance": 30,
+  "doctype": "Notification",
+  "document_type": "Power Purchase Agreement",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>URGENT: Power Purchase Agreement <strong>{{ doc.ppa_name }}</strong> with {{ doc.buyer_name }} expires in <strong>30 days</strong> on {{ doc.ppa_end_date }}. Immediate action required for renewal or extension.</p>",
+  "name": "PPA Expiry Warning 30 Days",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "URGENT: PPA Expires in 30 Days — {{ doc.ppa_name }}"
+}

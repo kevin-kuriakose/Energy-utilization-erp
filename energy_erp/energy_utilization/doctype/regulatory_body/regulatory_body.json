@@ -1,0 +1,84 @@
+{
+  "actions": [],
+  "autoname": "field:body_name",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "body_name",
+    "body_type",
+    "jurisdiction",
+    "column_break_1",
+    "website",
+    "description",
+    "is_active"
+  ],
+  "fields": [
+    {
+      "fieldname": "body_name",
+      "fieldtype": "Data",
+      "label": "Body Name",
+      "reqd": 1,
+      "in_list_view": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "body_type",
+      "fieldtype": "Select",
+      "label": "Body Type",
+      "options": "\nCentral Regulator\nState Regulator\nGrid Operator\nMarket Operator\nEnvironmental Authority\nOther",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "jurisdiction",
+      "fieldtype": "Data",
+      "label": "Jurisdiction"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "website",
+      "fieldtype": "Data",
+      "label": "Website"
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Small Text",
+      "label": "Description"
+    },
+    {
+      "fieldname": "is_active",
+      "fieldtype": "Check",
+      "label": "Is Active",
+      "default": "1"
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Regulatory Body",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "read": 1,
+      "role": "All"
+    }
+  ],
+  "title_field": "body_name",
+  "track_changes": 1
+}

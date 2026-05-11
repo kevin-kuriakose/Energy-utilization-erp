@@ -1,0 +1,140 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "asset_name",
+    "power_plant",
+    "technology_type",
+    "installed_capacity_mwp",
+    "column_break_1",
+    "cuf_target_percent",
+    "commission_date",
+    "site_location",
+    "section_break_grid",
+    "grid_injection_voltage",
+    "evacuation_substation",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EREA-.YYYY.-.#####",
+      "default": "EREA-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "asset_name",
+      "fieldtype": "Data",
+      "label": "Asset Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "power_plant",
+      "fieldtype": "Link",
+      "label": "Power Plant",
+      "options": "Power Plant",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "technology_type",
+      "fieldtype": "Select",
+      "label": "Technology Type",
+      "options": "\nSolar PV\nSolar CSP\nWind\nSmall Hydro\nBiomass\nWaste-to-Energy",
+      "reqd": 1
+    },
+    {
+      "fieldname": "installed_capacity_mwp",
+      "fieldtype": "Float",
+      "label": "Installed Capacity (MWp)"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "cuf_target_percent",
+      "fieldtype": "Percent",
+      "label": "CUF Target (%)"
+    },
+    {
+      "fieldname": "commission_date",
+      "fieldtype": "Date",
+      "label": "Commission Date"
+    },
+    {
+      "fieldname": "site_location",
+      "fieldtype": "Data",
+      "label": "Site Location"
+    },
+    {
+      "fieldname": "section_break_grid",
+      "fieldtype": "Section Break",
+      "label": "Grid Details"
+    },
+    {
+      "fieldname": "grid_injection_voltage",
+      "fieldtype": "Data",
+      "label": "Grid Injection Voltage"
+    },
+    {
+      "fieldname": "evacuation_substation",
+      "fieldtype": "Link",
+      "label": "Evacuation Substation",
+      "options": "Substation"
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nOperational\nUnder Construction\nDecommissioned\nStandby",
+      "default": "Operational",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Renewable Asset",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "title_field": "asset_name",
+  "track_changes": 1
+}

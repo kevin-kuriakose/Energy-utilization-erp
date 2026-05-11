@@ -1,0 +1,15 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "condition": "doc.plf_percent < doc.target_plf_percent and doc.target_plf_percent > 0",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Generation Log",
+  "enabled": 1,
+  "event": "Save",
+  "message": "<p>PLF for <strong>{{ doc.generating_unit }}</strong> on {{ doc.log_date }} is <strong>{{ doc.plf_percent }}%</strong>, below target of {{ doc.target_plf_percent }}%. Net Generation: {{ doc.net_generation_mu }} MU. Please investigate and take corrective action.</p>",
+  "name": "PLF Below Target Alert",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "PLF Below Target — {{ doc.generating_unit }} on {{ doc.log_date }}"
+}

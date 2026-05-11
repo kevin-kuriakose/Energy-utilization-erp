@@ -1,0 +1,130 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "schedule_date",
+    "power_plant",
+    "issuing_authority",
+    "column_break_1",
+    "schedule_type",
+    "total_declared_capacity_mw",
+    "total_actual_injection_mw",
+    "section_break_units",
+    "unit_schedules",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EESO-.YYYY.-.#####",
+      "default": "EESO-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "schedule_date",
+      "fieldtype": "Date",
+      "label": "Schedule Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "power_plant",
+      "fieldtype": "Link",
+      "label": "Power Plant",
+      "options": "Power Plant",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "issuing_authority",
+      "fieldtype": "Select",
+      "label": "Issuing Authority",
+      "options": "\nSLDC\nRLDC\nNLDC"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "schedule_type",
+      "fieldtype": "Select",
+      "label": "Schedule Type",
+      "options": "\nDay-Ahead\nReal-Time\nWeekly"
+    },
+    {
+      "fieldname": "total_declared_capacity_mw",
+      "fieldtype": "Float",
+      "label": "Total Declared Capacity (MW)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_actual_injection_mw",
+      "fieldtype": "Float",
+      "label": "Total Actual Injection (MW)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_units",
+      "fieldtype": "Section Break",
+      "label": "Unit Schedules"
+    },
+    {
+      "fieldname": "unit_schedules",
+      "fieldtype": "Table",
+      "label": "Unit Schedules",
+      "options": "Unit Schedule Row"
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nDraft\nIssued\nActualized\nCancelled",
+      "default": "Draft",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Energy Scheduling Order",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "title_field": "schedule_date",
+  "track_changes": 1
+}

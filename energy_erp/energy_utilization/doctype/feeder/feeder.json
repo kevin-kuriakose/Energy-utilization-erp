@@ -1,0 +1,123 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "feeder_name",
+    "substation",
+    "feeder_type",
+    "connected_load_mw",
+    "column_break_1",
+    "consumer_count",
+    "feeder_length_km",
+    "voltage_level",
+    "section_break_status",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EFDR-.YYYY.-.#####",
+      "default": "EFDR-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "feeder_name",
+      "fieldtype": "Data",
+      "label": "Feeder Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "substation",
+      "fieldtype": "Link",
+      "label": "Substation",
+      "options": "Substation",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "feeder_type",
+      "fieldtype": "Select",
+      "label": "Feeder Type",
+      "options": "\nRural\nUrban\nIndustrial\nAgricultural",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "connected_load_mw",
+      "fieldtype": "Float",
+      "label": "Connected Load (MW)"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "consumer_count",
+      "fieldtype": "Int",
+      "label": "Consumer Count"
+    },
+    {
+      "fieldname": "feeder_length_km",
+      "fieldtype": "Float",
+      "label": "Feeder Length (km)"
+    },
+    {
+      "fieldname": "voltage_level",
+      "fieldtype": "Link",
+      "label": "Voltage Level",
+      "options": "Voltage Level"
+    },
+    {
+      "fieldname": "section_break_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "\nOperational\nUnder Maintenance\nDecommissioned",
+      "default": "Operational",
+      "in_list_view": 1
+    }
+  ],
+  "links": [],
+  "module": "Energy Utilization",
+  "name": "Feeder",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "title_field": "feeder_name",
+  "track_changes": 1
+}
