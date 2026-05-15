@@ -1,7 +1,7 @@
 {
   "category": "Modules",
   "charts": [],
-  "content": "[{\"type\": \"card\", \"data\": {\"card_name\": \"Power Generation\", \"col\": 4, \"links\": [{\"label\": \"Power Plant\", \"link_to\": \"Power Plant\", \"type\": \"DocType\"}, {\"label\": \"Generating Unit\", \"link_to\": \"Generating Unit\", \"type\": \"DocType\"}, {\"label\": \"Generation Log\", \"link_to\": \"Generation Log\", \"type\": \"DocType\"}, {\"label\": \"Outage Report\", \"link_to\": \"Outage Report\", \"type\": \"DocType\"}, {\"label\": \"Energy Scheduling Order\", \"link_to\": \"Energy Scheduling Order\", \"type\": \"DocType\"}, {\"label\": \"Deviation Settlement\", \"link_to\": \"Deviation Settlement\", \"type\": \"DocType\"}]}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Renewable Energy\", \"col\": 4, \"links\": [{\"label\": \"Renewable Asset\", \"link_to\": \"Renewable Asset\", \"type\": \"DocType\"}, {\"label\": \"Irradiance and Weather Log\", \"link_to\": \"Irradiance and Weather Log\", \"type\": \"DocType\"}, {\"label\": \"REC Certificate\", \"link_to\": \"REC Certificate\", \"type\": \"DocType\"}, {\"label\": \"RPO Compliance Record\", \"link_to\": \"RPO Compliance Record\", \"type\": \"DocType\"}, {\"label\": \"RPO Category\", \"link_to\": \"RPO Category\", \"type\": \"DocType\"}]}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Fuel Management\", \"col\": 4, \"links\": [{\"label\": \"Fuel Supply Agreement\", \"link_to\": \"Fuel Supply Agreement\", \"type\": \"DocType\"}, {\"label\": \"Fuel Receipt\", \"link_to\": \"Fuel Receipt\", \"type\": \"DocType\"}, {\"label\": \"Fuel Stock Entry\", \"link_to\": \"Fuel Stock Entry\", \"type\": \"DocType\"}, {\"label\": \"Fuel Consumption Log\", \"link_to\": \"Fuel Consumption Log\", \"type\": \"DocType\"}, {\"label\": \"Fuel Quality Test\", \"link_to\": \"Fuel Quality Test\", \"type\": \"DocType\"}, {\"label\": \"Fuel Grade\", \"link_to\": \"Fuel Grade\", \"type\": \"DocType\"}]}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Grid Distribution\", \"col\": 4, \"links\": [{\"label\": \"Substation\", \"link_to\": \"Substation\", \"type\": \"DocType\"}, {\"label\": \"Feeder\", \"link_to\": \"Feeder\", \"type\": \"DocType\"}, {\"label\": \"Energy Meter Reading\", \"link_to\": \"Energy Meter Reading\", \"type\": \"DocType\"}, {\"label\": \"AT and C Loss Report\", \"link_to\": \"AT and C Loss Report\", \"type\": \"DocType\"}, {\"label\": \"Grid Fault Report\", \"link_to\": \"Grid Fault Report\", \"type\": \"DocType\"}, {\"label\": \"Voltage Level\", \"link_to\": \"Voltage Level\", \"type\": \"DocType\"}]}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Asset Management\", \"col\": 4, \"links\": [{\"label\": \"Plant Asset\", \"link_to\": \"Plant Asset\", \"type\": \"DocType\"}, {\"label\": \"Maintenance Work Order\", \"link_to\": \"Maintenance Work Order\", \"type\": \"DocType\"}, {\"label\": \"Annual Overhaul Plan\", \"link_to\": \"Annual Overhaul Plan\", \"type\": \"DocType\"}, {\"label\": \"Asset Inspection Report\", \"link_to\": \"Asset Inspection Report\", \"type\": \"DocType\"}, {\"label\": \"Spare Parts Inventory\", \"link_to\": \"Spare Parts Inventory\", \"type\": \"DocType\"}, {\"label\": \"Capital Project\", \"link_to\": \"Capital Project\", \"type\": \"DocType\"}]}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Finance and Regulatory\", \"col\": 4, \"links\": [{\"label\": \"Energy Bill\", \"link_to\": \"Energy Bill\", \"type\": \"DocType\"}, {\"label\": \"Tariff Order\", \"link_to\": \"Tariff Order\", \"type\": \"DocType\"}, {\"label\": \"Power Purchase Agreement\", \"link_to\": \"Power Purchase Agreement\", \"type\": \"DocType\"}, {\"label\": \"BEE Energy Audit\", \"link_to\": \"BEE Energy Audit\", \"type\": \"DocType\"}, {\"label\": \"Environmental Compliance Report\", \"link_to\": \"Environmental Compliance Report\", \"type\": \"DocType\"}, {\"label\": \"Regulatory Body\", \"link_to\": \"Regulatory Body\", \"type\": \"DocType\"}]}}]",
+  "content": "[{\"id\": \"hd-0\", \"type\": \"header\", \"data\": {\"text\": \"Power Generation\", \"col\": 12}}, {\"id\": \"sc-1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Power Plant\", \"col\": 3}}, {\"id\": \"sc-2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Generating Unit\", \"col\": 3}}, {\"id\": \"sc-3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Generation Log\", \"col\": 3}}, {\"id\": \"sc-4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Outage Report\", \"col\": 3}}, {\"id\": \"sc-5\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Energy Scheduling Order\", \"col\": 3}}, {\"id\": \"sc-6\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Deviation Settlement\", \"col\": 3}}, {\"id\": \"hd-7\", \"type\": \"header\", \"data\": {\"text\": \"Grid & Distribution\", \"col\": 12}}, {\"id\": \"sc-8\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Substation\", \"col\": 3}}, {\"id\": \"sc-9\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Feeder\", \"col\": 3}}, {\"id\": \"sc-10\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Energy Meter Reading\", \"col\": 3}}, {\"id\": \"sc-11\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"AT and C Loss Report\", \"col\": 3}}, {\"id\": \"sc-12\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Grid Fault Report\", \"col\": 3}}, {\"id\": \"sc-13\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Voltage Level\", \"col\": 3}}, {\"id\": \"hd-14\", \"type\": \"header\", \"data\": {\"text\": \"Renewable Energy\", \"col\": 12}}, {\"id\": \"sc-15\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Renewable Asset\", \"col\": 3}}, {\"id\": \"sc-16\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Irradiance and Weather Log\", \"col\": 3}}, {\"id\": \"sc-17\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"REC Certificate\", \"col\": 3}}, {\"id\": \"sc-18\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"RPO Compliance Record\", \"col\": 3}}, {\"id\": \"hd-19\", \"type\": \"header\", \"data\": {\"text\": \"Fuel Management\", \"col\": 12}}, {\"id\": \"sc-20\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fuel Supply Agreement\", \"col\": 3}}, {\"id\": \"sc-21\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fuel Receipt\", \"col\": 3}}, {\"id\": \"sc-22\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fuel Stock Entry\", \"col\": 3}}, {\"id\": \"sc-23\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fuel Consumption Log\", \"col\": 3}}, {\"id\": \"sc-24\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fuel Grade\", \"col\": 3}}, {\"id\": \"hd-25\", \"type\": \"header\", \"data\": {\"text\": \"Asset & Maintenance\", \"col\": 12}}, {\"id\": \"sc-26\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Plant Asset\", \"col\": 3}}, {\"id\": \"sc-27\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Maintenance Work Order\", \"col\": 3}}, {\"id\": \"sc-28\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Annual Overhaul Plan\", \"col\": 3}}, {\"id\": \"sc-29\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Asset Inspection Report\", \"col\": 3}}, {\"id\": \"sc-30\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Capital Project\", \"col\": 3}}, {\"id\": \"hd-31\", \"type\": \"header\", \"data\": {\"text\": \"Compliance & Billing\", \"col\": 12}}, {\"id\": \"sc-32\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Tariff Order\", \"col\": 3}}, {\"id\": \"sc-33\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Power Purchase Agreement\", \"col\": 3}}, {\"id\": \"sc-34\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Regulatory Body\", \"col\": 3}}, {\"id\": \"sc-35\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Energy Bill\", \"col\": 3}}, {\"id\": \"sc-36\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"BEE Energy Audit\", \"col\": 3}}, {\"id\": \"sc-37\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Environmental Compliance Report\", \"col\": 3}}, {\"id\": \"hd-38\", \"type\": \"header\", \"data\": {\"text\": \"Reports\", \"col\": 12}}, {\"id\": \"sc-39\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fuel Cost per Unit Report\", \"col\": 3}}, {\"id\": \"sc-40\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"BEE PAT Cycle Tracker\", \"col\": 3}}, {\"id\": \"sc-41\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"RPO Compliance Status\", \"col\": 3}}, {\"id\": \"sc-42\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Generation vs Schedule Report\", \"col\": 3}}, {\"id\": \"sc-43\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Revenue Realisation Report\", \"col\": 3}}, {\"id\": \"sc-44\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Outage Analysis Report\", \"col\": 3}}, {\"id\": \"sc-45\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Plant Performance Dashboard\", \"col\": 3}}, {\"id\": \"sc-46\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"AT and C Loss Trend\", \"col\": 3}}]",
   "doctype": "Workspace",
   "for_user": "",
   "icon": "uil uil-bolt",
@@ -266,6 +266,54 @@
       "color": "Green",
       "icon": "uil uil-trees",
       "name": "sc-ecr"
+    },
+    {
+      "label": "Fuel Cost per Unit Report",
+      "link_to": "Fuel Cost per Unit Report",
+      "type": "Report",
+      "name": "sc-fuel-cost-per-u"
+    },
+    {
+      "label": "BEE PAT Cycle Tracker",
+      "link_to": "BEE PAT Cycle Tracker",
+      "type": "Report",
+      "name": "sc-bee-pat-cycle-t"
+    },
+    {
+      "label": "RPO Compliance Status",
+      "link_to": "RPO Compliance Status",
+      "type": "Report",
+      "name": "sc-rpo-compliance-"
+    },
+    {
+      "label": "Generation vs Schedule Report",
+      "link_to": "Generation vs Schedule Report",
+      "type": "Report",
+      "name": "sc-generation-vs-s"
+    },
+    {
+      "label": "Revenue Realisation Report",
+      "link_to": "Revenue Realisation Report",
+      "type": "Report",
+      "name": "sc-revenue-realisa"
+    },
+    {
+      "label": "Outage Analysis Report",
+      "link_to": "Outage Analysis Report",
+      "type": "Report",
+      "name": "sc-outage-analysis"
+    },
+    {
+      "label": "Plant Performance Dashboard",
+      "link_to": "Plant Performance Dashboard",
+      "type": "Report",
+      "name": "sc-plant-performan"
+    },
+    {
+      "label": "AT and C Loss Trend",
+      "link_to": "AT and C Loss Trend",
+      "type": "Report",
+      "name": "sc-at-and-c-loss-t"
     }
   ],
   "title": "Energy Utilization"
