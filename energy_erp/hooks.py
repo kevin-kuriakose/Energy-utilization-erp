@@ -18,9 +18,6 @@ scheduler_events = {
     "weekly": [],
 }
 
-    {"dt": "Custom Field", "filters": [["module", "=", "Energy Utilization"]]},
-    {"dt": "Property Setter", "filters": [["module", "=", "Energy Utilization"]]},
-]
 
 override_doctype_class = {
     # Phase 1 — Master Doctypes
