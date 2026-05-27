@@ -18,7 +18,6 @@ scheduler_events = {
     "weekly": [],
 }
 
-fixtures = [
     {"dt": "Custom Field", "filters": [["module", "=", "Energy Utilization"]]},
     {"dt": "Property Setter", "filters": [["module", "=", "Energy Utilization"]]},
 ]
@@ -70,3 +69,11 @@ override_doctype_class = {
 }
 
 after_install = "energy_erp.install.after_install"
+
+fixtures = [
+    {"doctype": "Workspace", "filters": [["name", "in", ["Energy Utilization"]]]},
+    {"doctype": "Notification", "filters": [["document_type", "in", [
+        "Energy Bill", "Generation Log", "Outage Report", "Fuel Stock Entry",
+        "Power Purchase Agreement", "REC Certificate", "Environmental Compliance Report"
+    ]]]},
+]
