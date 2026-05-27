@@ -51,8 +51,8 @@
     {
       "fieldname": "supplier",
       "fieldtype": "Link",
-      "label": "Supplier",
-      "options": "Supplier"
+      "label": "BA Supplier",
+      "options": "BA Supplier"
     },
     {
       "fieldname": "fuel_type",

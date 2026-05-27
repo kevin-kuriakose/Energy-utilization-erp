@@ -1,0 +1,20 @@
+{
+    "app_name": "energy_erp",
+    "display_name": "EnergyEdge",
+    "description": "Power Plant & Energy Management",
+    "show_modules": [
+        "Accounts", "Buying", "Selling",
+        "Stock", "HR", "Assets", "Quality", "Contacts"
+    ],
+    "hide_modules": [
+        "Manufacturing", "Agriculture", "Healthcare",
+        "Education", "Hospitality", "Non Profit",
+        "E-commerce", "Loan Management"
+    ],
+    "optional_modules": [
+        {"module": "Projects", "label": "Projects & Timesheets", "description": "Track maintenance projects"},
+        {"module": "CRM", "label": "CRM", "description": "Manage client relationships"},
+        {"module": "Support", "label": "Support", "description": "Technical support tickets"},
+        {"module": "Website", "label": "Website", "description": "Company website"}
+    ]
+}
